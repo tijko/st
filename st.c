@@ -1571,6 +1571,7 @@ tsetmode(int priv, int set, const int *args, int narg)
 		} else {
 			switch (*args) {
 			case 0:  /* Error (IGNORED) */
+            case 34: /* XXX tijko-patch STOP SPAMMING MY LOGS WITH 'default-case' on #34 */
 				break;
 			case 2:
 				xsetmode(set, MODE_KBDLOCK);
