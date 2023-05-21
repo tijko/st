@@ -1560,6 +1560,7 @@ tsetmode(int priv, int set, const int *args, int narg)
 			case 1015: /* urxvt mangled mouse mode; incompatible
 				      and can be mistaken for other control
 				      codes. */
+            case 34: /* XXX tijko-patch STOP SPAMMING MY LOGS WITH 'default-case' on #34 */
 				break;
 			default:
 				fprintf(stderr,
